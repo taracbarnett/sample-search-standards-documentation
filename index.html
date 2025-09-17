@@ -7,28 +7,17 @@
     <title>Search and Standards Documentation</title>
   </head>
   <body>
-<div class="container mt-4">
-  <!-- Tab Navigation -->
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1-content" type="button" role="tab" aria-controls="tab1-content" aria-selected="true">Tab 1</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2-content" type="button" role="tab" aria-controls="tab2-content" aria-selected="false">Tab 2</button>
-    </li>
-  </ul>
-
-  <!-- Tab Content -->
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="tab1-content" role="tabpanel" aria-labelledby="tab1-tab">
-      <h3>Content for Tab 1</h3>
-      <p>This is the content displayed when Tab 1 is active.</p>
-    </div>
-    <div class="tab-pane fade" id="tab2-content" role="tabpanel" aria-labelledby="tab2-tab">
-      <h3>Content for Tab 2</h3>
-      <p>This is the content displayed when Tab 2 is active.</p>
-    </div>
-  </div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="field-search" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Field Behavior</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="standard-search" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Search Standard</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="field-search">This is where search 1 goes</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="standard-search">This is where search 2 goes</div>
 </div>
 
 
