@@ -1,0 +1,17 @@
+Standard,Definition,Search Field,App/Modal,Compliant
+Allows wildcards,Wildcards should be allowed,Add contacts modal search,Add contacts modal,TRUE
+Allows wildcards,Wildcards should be allowed,Add Donors Modal: Name,Add Donors Modal,TRUE
+Allows wildcards,Wildcards should be allowed,Add interfaces modal search,Add interfaces modal,TRUE
+Allows wildcards,Wildcards should be allowed,Agreements Lines Search,Agreements,TRUE
+Allows wildcards,Wildcards should be allowed,Agreements Search,Agreements,TRUE
+Allows wildcards,Wildcards should be allowed,Scan or enter barcode to check in item,Check in,TRUE
+Allows wildcards,Wildcards should be allowed,Add Donors Modal: Code,Add Donors Modal,FALSE
+Allows wildcards,Wildcards should be allowed,Scan or enter item barcode,Check Out,FALSE
+Allows wildcards,Wildcards should be allowed,Scan or enter patron barcode,Check Out,FALSE
+Allows wildcards,Wildcards should be allowed,Description,Circulation log,FALSE
+Allows wildcards,Wildcards should be allowed,Item Barcode,Circulation log,FALSE
+Allows wildcards,Wildcards should be allowed,User Barcode,Circulation log,FALSE
+Searching is case insensitive,Searching should be case insensitive,Add contacts modal search,Add contacts modal,TRUE
+Searching is case insensitive,Searching should be case insensitive,Add Donors Modal: Name,Add Donors Modal,TRUE
+Searching is case insensitive,Searching should be case insensitive,Agreements Search,Agreements,TRUE
+Searching is case insensitive,Searching should be case insensitive,Description,Circulation log,FALSE
