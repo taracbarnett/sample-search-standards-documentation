@@ -1,5 +1,5 @@
-App/Modal,Search,Allows Wildcards?
-Add contacts modal,Add contacts modal search,TRUE
+App/Modal,Search,Allows Wildcards?,Searching is case insensitive
+Add contacts modal,Add contacts modal search,TRUE,FALSE
 Add Donors Modal,Add Donors Modal: Code,FALSE
 Add Donors Modal,Add Donors Modal: Name,TRUE
 Add interfaces modal,Add interfaces modal search,TRUE
