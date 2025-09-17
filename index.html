@@ -1,28 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Search and Standards Documentation</title>
-  </head>
-  <body>
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="field-search" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Field Behavior</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="standard-search" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Search Standard</button>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="field-search">This is where search 1 goes</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="standard-search">This is where search 2 goes</div>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Analysis Dashboard</h1>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('search-by-field')">Search by Field</button>
+            <button class="tab-button" onclick="switchTab('standards-compliance')">Standards Compliance</button>
+        </div>
+        
+        <div class="tab-content">
+            <!-- Tab 1: Search by Field -->
+            <div id="search-by-field" class="tab-panel active">
+                <div class="filter-section">
+                    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+                        <div class="filter-group">
+                            <label for="app-search">Search by App/Modal:</label>
+                            <div class="search-dropdown">
+                                <input type="text" id="app-search" placeholder="Type to search apps/modals..." 
+                                       oninput="filterAppDropdown()" onfocus="showAppDropdown()" onblur="hideAppDropdown()">
+                                <div id="app-dropdown" class="dropdown-list"></div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <label for="field-search">Search by Field Name:</label>
+                            <div class="search-dropdown">
+                                <input type="text" id="field-search" placeholder="Type to search fields..." 
+                                       oninput="filterFieldDropdown()" onfocus="showFieldDropdown()" onblur="hideFieldDropdown()">
+                                <div id="field-dropdown" class="dropdown-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <div id="field-results" class="no-results">
+                        Search for a field or app/modal to view details
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab 2: Standards Compliance -->
+            <div id="standards-compliance" class="tab-panel">
+                <div class="filter-section">
+                    <div class="filter-group">
+                        <label for="standard-select">Select Standard:</label>
+                        <select id="standard-select" onchange="filterByStandard()">
+                            <option value="">Choose a standard...</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <div id="standard-results" class="no-results">
+                        Select a standard to view compliant fields
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
