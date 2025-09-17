@@ -11,8 +11,8 @@
         <h1>Search Analysis Dashboard</h1>
         
         <div class="tabs">
-            <button class="tab-button active" onclick="switchTab('search-by-field')">Search by Field</button>
-            <button class="tab-button" onclick="switchTab('standards-compliance')">Standards Compliance</button>
+            <button class="tab-button active" data-tab="search-by-field">Search by Field</button>
+            <button class="tab-button" data-tab="standards-compliance">Standards Compliance</button>
         </div>
         
         <div class="tab-content">
@@ -23,16 +23,14 @@
                         <div class="filter-group">
                             <label for="app-search">Search by App/Modal:</label>
                             <div class="search-dropdown">
-                                <input type="text" id="app-search" placeholder="Type to search apps/modals..." 
-                                       oninput="filterAppDropdown()" onfocus="showAppDropdown()" onblur="hideAppDropdown()">
+                                <input type="text" id="app-search" placeholder="Type to search apps/modals...">
                                 <div id="app-dropdown" class="dropdown-list"></div>
                             </div>
                         </div>
                         <div class="filter-group">
                             <label for="field-search">Search by Field Name:</label>
                             <div class="search-dropdown">
-                                <input type="text" id="field-search" placeholder="Type to search fields..." 
-                                       oninput="filterFieldDropdown()" onfocus="showFieldDropdown()" onblur="hideFieldDropdown()">
+                                <input type="text" id="field-search" placeholder="Type to search fields...">
                                 <div id="field-dropdown" class="dropdown-list"></div>
                             </div>
                         </div>
@@ -51,7 +49,7 @@
                 <div class="filter-section">
                     <div class="filter-group">
                         <label for="standard-select">Select Standard:</label>
-                        <select id="standard-select" onchange="filterByStandard()">
+                        <select id="standard-select">
                             <option value="">Choose a standard...</option>
                         </select>
                     </div>
