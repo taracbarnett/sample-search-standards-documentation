@@ -1,0 +1,13 @@
+App/Modal,Search,Allows Wildcards?
+Add contacts modal,Add contacts modal search,TRUE
+Add Donors Modal,Add Donors Modal: Code,FALSE
+Add Donors Modal,Add Donors Modal: Name,TRUE
+Add interfaces modal,Add interfaces modal search,TRUE
+Agreements,Agreements Lines Search,TRUE
+Agreements,Agreements Search,TRUE
+Check in,Scan or enter barcode to check in item,TRUE
+Check Out,Scan or enter item barcode,FALSE
+Check Out,Scan or enter patron barcode,FALSE
+Circulation log,Description,FALSE
+Circulation log,Item Barcode,FALSE
+Circulation log,User Barcode,FALSE
